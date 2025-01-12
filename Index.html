@@ -1,0 +1,75 @@
+<!--
+// v0 by Vercel.
+// https://v0.dev/t/V8YyDn4vS40
+-->
+
+<div class="container mx-auto px-4 py-8">
+    <div class="mb-6">
+      <h1 class="text-3xl font-bold mb-4">Workout Tracker</h1>
+      <div class="flex items-center gap-4">
+        <input
+          class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 flex-1"
+          placeholder="Search by name"
+          type="text"
+          value=""
+        />
+        <option value="">All Workout Types</option>
+        <option value="Running">Running</option>
+        <option value="Cycling">Cycling</option>
+        <option value="Strength Training">Strength Training</option>
+        <option value="Yoga">Yoga</option>
+        <select
+          aria-hidden="true"
+          tabindex="-1"
+          style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; overflow-wrap: normal;"
+        ></select>
+      </div>
+    </div>
+    <div class="overflow-x-auto">
+      <table class="w-full table-auto">
+        <thead>
+          <tr class="bg-gray-200 text-gray-700">
+            <th class="px-4 py-2 text-left">User Name</th>
+            <th class="px-4 py-2 text-left">Workout Type</th>
+            <th class="px-4 py-2 text-left">Workout Minutes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-gray-200 hover:bg-gray-100">
+            <td class="px-4 py-2">John Doe</td>
+            <td class="px-4 py-2">Running</td>
+            <td class="px-4 py-2">45</td>
+          </tr>
+          <tr class="border-b border-gray-200 hover:bg-gray-100">
+            <td class="px-4 py-2">Jane Smith</td>
+            <td class="px-4 py-2">Cycling</td>
+            <td class="px-4 py-2">60</td>
+          </tr>
+          <tr class="border-b border-gray-200 hover:bg-gray-100">
+            <td class="px-4 py-2">Michael Johnson</td>
+            <td class="px-4 py-2">Strength Training</td>
+            <td class="px-4 py-2">90</td>
+          </tr>
+          <tr class="border-b border-gray-200 hover:bg-gray-100">
+            <td class="px-4 py-2">Emily Davis</td>
+            <td class="px-4 py-2">Yoga</td>
+            <td class="px-4 py-2">30</td>
+          </tr>
+          <tr class="border-b border-gray-200 hover:bg-gray-100">
+            <td class="px-4 py-2">David Lee</td>
+            <td class="px-4 py-2">Running</td>
+            <td class="px-4 py-2">75</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="flex justify-end mt-6">
+      <nav
+        aria-label="pagination"
+        class="mx-auto flex w-full justify-center"
+        role="navigation"
+        currentpage="1"
+        totalpages="2"
+      ></nav>
+    </div>
+  </div>
